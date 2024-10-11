@@ -1,12 +1,20 @@
-import './App.css'
+import { Container, Typography, Box } from "@mui/material";
+import './App.css';
+import AddHabitForm from './components/AddHabitForm';
+import HabitList from "./components/habitList";
 
 function App() {
-
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+    <Container maxWidth="md">
+      <Box sx={{ my: 4 }}>
+        <Typography variant="h2" component="h1" gutterBottom align="center">
+          Habit Tracker
+        </Typography>
+        <AddHabitForm />
+        {/* <HabitList /> */}
+      </Box>
+    </Container>
   )
 }
 
-export default App
+export default App;
